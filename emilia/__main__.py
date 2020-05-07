@@ -32,7 +32,6 @@ PM_START_TEXT = "start_text"
 
 HELP_STRINGS = "help_text"#.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-DONATE_STRING = "donate_text"
 
 IMPORTED = {}
 MIGRATEABLE = []

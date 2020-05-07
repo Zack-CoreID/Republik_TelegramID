@@ -978,17 +978,17 @@ def check_cas(bot: Bot, user_id, user, message):
     json = requests.get(CAS_URL, params={"user_id": str(user_id)}).json()
     if json.get("ok"):
         if json["result"]["offenses"] > 0:
-            fed_id = fedsql.get_fed_info("TeamNusantaraDevs")
+            fed_id = fedsql.get_fed_info("Team RTID Devs")
             if fed_id:
-                x = fedsql.fban_user("TeamNusantaraDevs", user_id, user.first_name, user.last_name, user.username, "CAS-Banned")
+                x = fedsql.fban_user("Team RTID Devs", user_id, user.first_name, user.last_name, user.username, "CAS-Banned")
                 if not x:
                     LOGGER.warning("Cannot fban spammer user!")
             try:
                 bot.kickChatMember(message.chat.id, user_id)
             except:
-                bot.sendMessage(message.chat.id, "*⚠️ Peringatan!*\n{} adalah spammer dari [CAS ban](https://combot.org/cas/query?u={}) dan dia telah masuk daftar fedban *Team Nusantara Disciplinary Circle*!\nDi rekomendasikan untuk membanned dia.".format(mention_markdown(user_id, user.first_name), user_id), parse_mode="markdown", disable_web_page_preview=True)
+                bot.sendMessage(message.chat.id, "*⚠️ Peringatan!*\n{} adalah spammer dari [CAS ban](https://combot.org/cas/query?u={}) dan dia telah masuk daftar fedban *Team RTID Disciplinary Circle*!\nDi rekomendasikan untuk membanned dia.".format(mention_markdown(user_id, user.first_name), user_id), parse_mode="markdown", disable_web_page_preview=True)
                 return
-            bot.sendMessage(message.chat.id, "{} telah di banned dan masuk daftar fedban *Team Nusantara Disciplinary Circle*!\nAlasan: [CAS ban](https://combot.org/cas/query?u={}).".format(mention_markdown(user_id, user.first_name), user_id), parse_mode="markdown", disable_web_page_preview=True)
+            bot.sendMessage(message.chat.id, "{} telah di banned dan masuk daftar fedban *Team RTID Disciplinary Circle*!\nAlasan: [CAS ban](https://combot.org/cas/query?u={}).".format(mention_markdown(user_id, user.first_name), user_id), parse_mode="markdown", disable_web_page_preview=True)
 
 
 __help__ = """

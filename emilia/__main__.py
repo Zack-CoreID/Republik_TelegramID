@@ -20,9 +20,9 @@ from emilia.modules.helper_funcs.chat_status import is_user_admin
 from emilia.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hai {}, nama saya {}! Saya seorang manajer grup yang dikelola oleh [master saya ini](tg://user?id={}).
-Script saya menggunakan script Marie, tetapi berbeda dalam bahasa, server, code, dan lainnya.
-Untuk mendapatkan info status bot ini, anda dapat bergabung dengan channel kami [Ayra's Bot News](https://t.me/AyraBotNews)
+Hai {}, nama saya {}! Saya seorang manajer grup yang dikelola oleh [master saya ini](tg://user?id=1028432629).
+Script saya menggunakan script Emilia, tetapi berbeda dalam bahasa, server, code, dan lainnya.
+Untuk mendapatkan info status bot ini, anda dapat bergabung dengan channel kami [RTID Bot Dev](https://t.me/RTIDBotDevCh)
 
 Anda dapat menemukan daftar perintah yang tersedia dengan /help.
 
@@ -49,13 +49,13 @@ Dan berikut ini:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nSemua perintah bisa digunakan dengan baik / ataupun !.\n")
 
 DONATE_STRING = """Hai, senang mendengar Anda ingin menyumbang!
-Butuh banyak pekerjaan untuk [pencipta saya](tg://user?id=388576209) untuk membawa saya ke tempat saya sekarang, dan \
+Butuh banyak pekerjaan untuk [pencipta saya](tg://user?id=1028432629) untuk membawa saya ke tempat saya sekarang, dan \
 setiap sumbangan membantu dan memotivasi dia untuk membuat saya lebih baik.
 
 Semua uang sumbangan akan diberikan ke VPS yang lebih baik untuk menjadi tuan rumah saya, dan atau beberapa makanan. \
 Dia hanya orang biasa, jadi akan sangat membantu dia!
 
-Jika anda memang berminat untuk donate, silahkan kunjungi paypal.me/AyraHikari, Terima kasih 😁"""
+Jika anda memang berminat untuk donate, silahkan menghubungi via PM ke @Zack_Opp47 , Terima kasih 😁"""
 
 IMPORTED = {}
 MIGRATEABLE = []

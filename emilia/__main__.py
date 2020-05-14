@@ -146,7 +146,7 @@ def start(update, context):
             buttons = InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="🎉 Add me to your group", url="https://t.me/{}?startgroup=new".format(context.bot.username))],
                 [InlineKeyboardButton(text="💭 Language", callback_data="main_setlang"), InlineKeyboardButton(text="⚙️ Connect Group", callback_data="main_connect")],
-                [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/RTIDBotDev"), InlineKeyboardButton(text="🔔 Update Group", url="https://t.me/RTIDBotDevCh")],
+                [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/Republik_TelegramID"), InlineKeyboardButton(text="🔧 Dev Group", url="https://t.me/RTIDBotDev")],
                 [InlineKeyboardButton(text="❓ Help", url="https://t.me/{}?start=help".format(context.bot.username)), InlineKeyboardButton(text="💖 Donate", url="https://t.me/Born2fight")]])
             update.effective_message.reply_text(
                 tl(update.effective_message, PM_START_TEXT).format(escape_markdown(first_name), escape_markdown(context.bot.first_name), OWNER_ID),
